@@ -31,5 +31,5 @@ def detectar_inundacion_syn(paquete):
             # Reinicia el conteo para esta IP
             conteo_syn[ip_origen] = 0
 
-# Captura paquetes en la interfaz de red (cambia "eth0" por tu interfaz)
-sniff(filter="tcp", prn=detectar_inundacion_syn, iface="Ethernet", store=0)
+# Captura paquetes en la interfaz de red
+sniff(filter="tcp", prn=detectar_inundacion_syn, iface="eht0", store=0)
